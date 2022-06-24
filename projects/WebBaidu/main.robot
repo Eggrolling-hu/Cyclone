@@ -1,16 +1,18 @@
 *** Settings ***
-Documentation     Simple example using SeleniumLibrary.
-Library           SeleniumLibrary
+Documentation    Simple example using SeleniumLibrary.
+Library          SeleniumLibrary
 
 *** Variables ***
-${LOGIN URL}      https://www.baidu.com/
-${BROWSER}        Chrome
+${LOGIN URL}    https://www.baidu.com/
+${BROWSER}      Chrome
 
 *** Test Cases ***
 Valid Login
     Open Browser To Baidu Page
-    Input Search Content                123
+    Input Search Content          123
     Submit Credentials
+    Sleep                         10
+    [Teardown]                    Close Browser
 
 *** Keywords ***
 Open Browser To Baidu Page
@@ -18,8 +20,8 @@ Open Browser To Baidu Page
 
 Input Search Content
     [Arguments]    ${username}
-    Input Text    kw    ${username}
-    Sleep     1
+    Input Text     kw             ${username}
+    Sleep          1
 
 
 Submit Credentials
