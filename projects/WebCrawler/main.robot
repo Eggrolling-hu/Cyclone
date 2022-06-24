@@ -19,9 +19,14 @@ Search Book
     Wait Until Element Contains    xpath: //ul[@id='nr']//*    /                timeout=${timeout}
 
 Crawl Book List
-    ${count} =        Get Element Count    xpath: //ul[@id='nr']//li
+    ${count}=    Get Element Count    xpath: //ul[@id='nr']//li
+
+    IF           ${count} > 30
+    ${count}=    Set Variable     30
+    END
+
     Log To Console    ""
-    FOR               ${i}                 IN RANGE                           1    ${count}    3
-    ${string}         Get Text             css: ul#nr > li:nth-child(${i})
+    FOR               ${i}         IN RANGE                           1    ${count}    3
+    ${string}         Get Text     css: ul#nr > li:nth-child(${i})
     Log To Console    ${string}
     END

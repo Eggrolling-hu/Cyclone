@@ -2,10 +2,10 @@
 -e .
 
 # external requirements
-numpy
-pandas==1.3.2
-sklearn
-requests
-jsons
+pytesseract
+pyautogui
 colorlog
-Ipython
+helium
+pytz
+cv2
+

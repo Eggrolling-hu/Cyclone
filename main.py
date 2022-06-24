@@ -1,4 +1,13 @@
-from src.models import control_tower
+import subprocess
 
 if __name__ == "__main__":
-    control_tower.run()
+
+    # WebBaidu
+    # subprocess.run([
+    #     "robot", "--outputdir", "data/output", "projects/WebBaidu/main.robot"
+    # ])
+
+    # WebCrawler
+    subprocess.run([
+        "robot", "--outputdir", "data/output", "projects/WebCrawler/main.robot"
+    ])
