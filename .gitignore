@@ -6,6 +6,10 @@ __pycache__/
 # Data
 data/output/*
 
+# Src
+tests/*.xml
+tests/*.html
+
 # Vscode
 .vscode/*
 !.vscode/settings.json
