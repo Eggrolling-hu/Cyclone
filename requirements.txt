@@ -3,6 +3,7 @@
 
 # external requirements
 pytesseract
+pyscreeze
 pyautogui
 colorlog
 helium
