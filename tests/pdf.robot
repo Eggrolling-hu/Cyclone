@@ -10,6 +10,5 @@ Resource    ../src/keywords/Pdf.resource
 Smoke
     Hello World    Pdf
 
-# My Test
-#    ${result}=        Locate Image Area On Image    data/essential/needleImage.png    data/essential/haystackImage.png
-#    Log To Console    ${\n}${result}
+Case 0
+    Extract Images From PDF    ${EXECDIR}${/}data/essential/example.pdf    ${EXECDIR}${/}data/output
