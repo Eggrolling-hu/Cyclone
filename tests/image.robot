@@ -5,6 +5,8 @@ Documentation    This is a resource file, that can contain variables and keyword
 ...         Keywords are imported from the resource file
 Resource    ../src/keywords/Image.resource
 
+
 *** Test Cases ***
 My Test
-    Hello World
+    # Hello World    Image
+    Locate Image Area On Image    data/essential/needleImage.png    data/essential/haystackImage.png
