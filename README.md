@@ -18,16 +18,16 @@ Cyclone Robotic Process Automation
     ├── projects           <- Projects for the different customers.
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     │
     ├── src                <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes src a Python module
     │   │
-    │   ├── packages       <- Packages contain source code for the keywords
+    │   ├── packages       <- Packages to handle different scenarios
     │   │   ├──
     │   │   └──
-    │   │
-    │   ├── keywords       <- Keywords to handle different general scenarios
     │   │
     │   └── utils          <- tools, logging and other useful utils
     │
