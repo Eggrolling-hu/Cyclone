@@ -3,28 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Data
-data/output/*
-
-# Vscode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
-
-# Mac
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Local History for Visual Studio Code
-.history/
-
-# Built Visual Studio Code Extensions
-*.vsix
-
 # C extensions
 *.so
 
