@@ -3,8 +3,6 @@ Documentation    This is a resource file, that can contain variables and keyword
 ...              Keywords defined here can be used where this Keywords.resource in loaded.
 Library          ../packages/image/Image.py
 
-*** Settings ***
-Library    Image
 
 *** Keywords ***
 Hello World
@@ -15,5 +13,5 @@ Hello World
 Locate Image Area On Image
     [Documentation]    Search needleImage's location in haystackImage
     [Arguments]        ${needleImage}                                    ${haystackImage}    &{kwargs}
-    ${res}=            Locate                                            ${needleImage}      ${haystackImage}    &{kwargs}
-    Log                ${res}
+    ${result}=         Locate                                            ${needleImage}      ${haystackImage}    &{kwargs}
+    [Return]           ${result}
