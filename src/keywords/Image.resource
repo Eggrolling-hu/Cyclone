@@ -8,4 +8,12 @@ Library    Image
 
 *** Keywords ***
 Hello World
-    Hello
+    [Documentation]    Make sure basic function is alive
+    [Arguments]        ${message}
+    Smoke              ${message}
+
+Locate Image Area On Image
+    [Documentation]    Search needleImage's location in haystackImage
+    [Arguments]        ${needleImage}                                    ${haystackImage}    &{kwargs}
+    ${res}=            Locate                                            ${needleImage}      ${haystackImage}    &{kwargs}
+    Log                ${res}
