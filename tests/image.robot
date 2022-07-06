@@ -10,6 +10,6 @@ Resource    ../src/keywords/Image.resource
 Smoke
     Hello World    Image
 
-My Test
+Case 0
     ${result}=        Locate Image Area On Image    data/essential/needleImage.png    data/essential/haystackImage.png
     Log To Console    ${\n}${result}

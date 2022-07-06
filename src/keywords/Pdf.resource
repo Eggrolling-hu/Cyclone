@@ -23,7 +23,10 @@ Get Text From Pdf
     [Documentation]    ...
 
 Get All Images From Pdf
-    [Documentation]    ...
+    [Documentation]            extracts all the images from the PDF 
+    ...                        and saves them into the directory
+    [Arguments]                ${pdf_path}                              ${output_dir}
+    Extract Images From PDF    ${pdf_path}                              ${output_dir}
 
 Get Numer Of Pages
     [Documentation]    ...
