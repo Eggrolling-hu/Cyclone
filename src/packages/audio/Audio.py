@@ -5,7 +5,6 @@ Audio class
 
 # from src.packages.image.basic import Basic
 from robot.api.deco import keyword, library
-import subprocess
 import pyscreeze
 import hashlib
 import base64
