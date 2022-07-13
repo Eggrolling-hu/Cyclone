@@ -11,4 +11,4 @@ Smoke
     Hello World    Pdf
 
 Case 0
-    Extract Images From PDF    ${EXECDIR}${/}data/essential/example.pdf    ${EXECDIR}${/}data/output
+    Extract Images And Words From PDF    ${EXECDIR}${/}data/essential/example.pdf    ${EXECDIR}${/}data/output
