@@ -3,7 +3,7 @@ import subprocess
 if __name__ == "__main__":
 
     # PDF
-    subprocess.run(["robot", "--outputdir", "data/output", "tests/pdf.robot"])
+    # subprocess.run(["robot", "--outputdir", "data/output", "tests/pdf.robot"])
 
     # Video
     # subprocess.run(
@@ -20,11 +20,15 @@ if __name__ == "__main__":
     # WebBaidu
     # subprocess.run([
     #     "robot", "--outputdir", "data/output", "projects/WebBaidu/main.robot"
-    # ])
+    # ])å
 
     # WebCrawler
     # subprocess.run([
     #     "robot", "--outputdir", "data/output", "projects/WebCrawler/main.robot"
     # ])
+
+    # HD
+    subprocess.run(
+        ["robot", "--outputdir", "data/output", "projects/HD/main.robot"])
 
     pass

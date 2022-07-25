@@ -8,7 +8,7 @@ Resource    ../src/keywords/Audio.resource
 
 *** Test Cases ***
 Smoke
-    Hello World    Pdf
+    Hello World    Audio
 
 Case 0
     Audio To Words    ${EXECDIR}${/}data/essential/example.m4a    ${EXECDIR}${/}data/output
